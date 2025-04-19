@@ -1,52 +1,4 @@
-// ✅ Folder Structure:
-// ----------------------
-// - API
-//   - Controllers
-//     - UserController.cs
-//     - TenderController.cs
-//     - BidController.cs
-//     - EvaluationController.cs
-//   - DTOs
-//     - Users
-//     - Tenders
-//     - Bids
-// - Application
-//   - Interfaces
-//   - Services
-// - Domain
-//   - Entities
-//   - ValueObjects
-// - Infrastructure
-//   - Data
-//   - Repositories
-// - wwwroot
-//   - uploads
-//   - bids
-// - README.md
 
-// ✅ wwwroot Usage:
-// ----------------------
-// - /wwwroot/uploads → used for tender documents
-// - /wwwroot/bids    → used for supporting bid documents
-
-// Files are saved using GUID-based filenames for uniqueness.
-// Access to files (e.g. downloads) can be implemented using static file middleware if needed.
-
-
-// ✅ Testing the API Endpoints:
-// -----------------------------
-// All endpoints were tested successfully using Swagger UI with valid JWT Tokens:
-// 
-// 🔐 /api/User/register ✅
-// 🔐 /api/User/login ✅ → returns valid token with role claim
-// 📄 /api/Tender ✅ POST (with file), GET (all, by ID), PUT open/close/update ✅
-// 📄 /api/Bid/submit ✅ (multipart form)
-// 📄 /api/Bid/tender/{id} ✅
-// 🧠 /api/Evaluation/{id}/evaluate ✅
-
-
-// ✅ Final README.md Content:
-// -----------------------------
 # 🏗️ Bidding Management System
 
 ## ✨ Features
@@ -119,6 +71,3 @@
 - Ensure DB is running and connection string is valid in `appsettings.json`
 - wwwroot folder is auto-created if not present
 
-## ✅ Project Status
-✔️ Completed core features
-🔜 Optional features like Forgot Password, Filtering, Pagination can be added
